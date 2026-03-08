@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dia Internacional das Mulheres 🌸</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="petals-bg" id="petals"></div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLbOutside(event)">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="closeLb()">✕</button>
+    <button class="lightbox-nav lightbox-prev" onclick="lbNav(-1)">‹</button>
+    <img id="lbImg" src="" alt="">
+    <button class="lightbox-nav lightbox-next" onclick="lbNav(1)">›</button>
+    <p class="lightbox-counter" id="lbCounter"></p>
+  </div>
+</div>
+
+<div class="container">
+  <div style="width:100%;max-width:600px;">
+    <div class="card">
+      <div class="deco-circle c1"></div>
+      <div class="deco-circle c2"></div>
+
+      <!-- Header -->
+      <div class="icon-row">🌸</div>
+      <p class="date-tag">8 de Março · Dia Internacional das Mulheres</p>
+      <h1>Celebrando as <em>Mulheres</em><br>que Movem o meu Mundo </h1>
+      <p class="subtitle">Uma homenagem especial para ti✨</p>
+
+      <!-- Selector -->
+      <div style="margin-bottom:1rem;">
+        <label for="nameSelect">Para quem é essa homenagem?</label>
+        <div class="input-wrap">
+          <div class="select-wrap">
+            <select id="nameSelect">
+              <option value="">Escolha uma opção…</option>
+              <option value="mamae">Mamãe 💗</option>
+              <option value="joojs">Joojs 💗</option>
+            </select>
+          </div>
+          <button onclick="showMessage()">Celebrar 🎉</button>
+        </div>
+      </div>
+
+      <!-- Message -->
+      <div class="message-box" id="messageBox">
+        <div class="sparkles" id="sparklesContainer"></div>
+
+        <div class="msg-emoji" id="msgEmoji">💐</div>
+        <p class="msg-name" id="msgName"></p>
+
+        <!-- Fotos fixas no corpo da mensagem -->
+        <div class="msg-photos-section" id="msgPhotosSection" style="display:none;">
+          <div class="msg-photos-grid" id="msgPhotosGrid"></div>
+          <div style="margin-top:.75rem;"><span class="collage-badge">✨ Momentos especiais</span></div>
+        </div>
+
+        <!-- Collage de fotos do usuário -->
+        <div class="msg-collage-wrap" id="msgCollageWrap" style="display:none;">
+          <div class="collage-grid" id="msgCollage"></div>
+          <div><span class="collage-badge">📷 Suas fotos</span></div>
+        </div>
+
+        <div class="msg-divider"></div>
+        <p class="msg-text" id="msgText"></p>
+        <div class="msg-divider"></div>
+        <p class="msg-footer">🌸 8 de Março · Dia Internacional das Mulheres 🌸</p>
+        <button class="share-btn" onclick="copyMsg()">📋 Copiar mensagem</button>
+      </div>
+    </div>
+
+    <p class="page-footer">Feito com carinho para as mulheres mais especiais do mundo 💕</p>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
