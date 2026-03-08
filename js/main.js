@@ -33,7 +33,7 @@ Ser sua família é um presente que não tem preço. Tu transmitiste em nós o a
     photos: [IMG_JOOJS, IMG_GERAL],
     gridClass: 'duo',
     message: name => `Feliz Dia Internacional das Mulheres, <strong>${name}</strong>! ✨<br><br>
-Minhas queridas irmas, tive que fazer junto para nao ter briga, Vossemecês são a luz que ilumina e traz a alegria por onde passam — com as vossas energias boas, distintas, porém que se completam, tornam o mundo um lugar bom de se viver.<br><br>
+Minhas queridas irmãs, tive que fazer junto para não ter briga, Vossemecês são a luz que ilumina e levam a alegria por onde passam — com as vossas energias boas, distintas, porém, que se completam, tornam o mundo um lugar bom de se viver.<br><br>
 Espero um dia ser bom o bastante para compensar a vocês tudo aquilo que fizeram por mim.<br><br>
 <em>Continuem brilhando que o maninho ama vocês! 💫</em>`
   }
@@ -104,3 +104,4 @@ document.getElementById('nameSelect').addEventListener('change', () => {
   const box = document.getElementById('messageBox');
   if (box.style.display !== 'none') showMessage();
 });
+
